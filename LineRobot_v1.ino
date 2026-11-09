@@ -18,9 +18,9 @@
 #define RIGHT_SENSOR_PIN  9   // датчик линии Right
 
 // скорость, с которой робот движется вперёд (0-255)
-#define SPEED            100
+#define SPEED            200
 // скорость прохождения сложных участков
-#define SLOW_SPEED        35
+#define SLOW_SPEED       130
 // скорость обратного хода для сложного участка
 #define BACK_SLOW_SPEED   30
 // скорость обратного хода
@@ -28,7 +28,7 @@
 
 // коэффициент, задающий во сколько раз нужно затормозить
 // одно из колёс для поворота
-#define BRAKE_K            4   // коэффициент торможения
+#define BRAKE_K            3   // коэффициент торможения
 
 // имена состояний робота
 #define STATE_FORWARD  0
@@ -38,7 +38,7 @@
 
 #define SPEED_STEP     2       // приращение скорости
 // пороговое значение времени завершения поворота
-#define FAST_TIME_THRESHOLD 500
+#define FAST_TIME_THRESHOLD 40
 
 int state = STATE_FORWARD;     // начальное состояние
 int currentSpeed = SPEED;      // текущая скорость
